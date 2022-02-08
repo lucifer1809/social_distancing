@@ -2,7 +2,7 @@ import cv2
 from scipy.spatial import distance as dist
 
 cap = cv2.VideoCapture(0)
-face_model = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_model = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_frontalface_default.xml')
 
 while True:
     status , photo = cap.read()
